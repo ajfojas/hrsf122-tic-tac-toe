@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div><h1>TIC - TAC - TOE</h1></div>
+    <button id="reset" onClick="reset()">Reset</button>
+    <div id="board" onClick="checkWinner()">
+        <table align="center">
+            <tbody>
+                <tr id="row-1">
+                    <td id="one-one" class="col-1" onClick="takeTurn('one-one')"></td>
+                    <td id="one-two" class="col-2" onClick="takeTurn('one-two')"></td>
+                    <td id="one-three" class="col-3" onClick="takeTurn('one-three')"></td>
+                </tr>
+                <tr id="row-2">
+                    <td id="two-one" class="col-1" onClick="takeTurn('two-one')"></td>
+                    <td id="two-two" class="col-2" onClick="takeTurn('two-two')"></td>
+                    <td id="two-three" class="col-3" onClick="takeTurn('two-three')"></td>
+                </tr>
+                <tr id="row-3">
+                    <td id="three-one" class="col-1" onClick="takeTurn('three-one')"></td>
+                    <td id="three-two" class="col-2" onClick="takeTurn('three-two')"></td>
+                    <td id="three-three" class="col-3" onClick="takeTurn('three-three')"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="winner">
+        </div>
+        <div id="full">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
